@@ -72,7 +72,7 @@ function App() {
         <Route path="reg" element={<RegisterPage />} />
         {/* <Route path='resetpassword' element={<>user</>} /> */}
       </Route>
-      <Route path="/account/" element={<UserProfile />}></Route>
+      <Route path="/account/" element={isAuth(<UserProfile />)}></Route>
 
       <Route path="/error/" element={<PageLayout />}>
         <Route index element={<>У вас нет роли администратора</>} />
